@@ -202,31 +202,12 @@ https://cloud.google.com/bigquery
 
 ## 4. Use Case Analysis
 
-### **Use Case 1 – Live IoT Sensor Monitoring**
+### Use Case Comparison Table
 
-**Recommended CSP: Google Cloud Platform (GCP)**
-
-**Why:**
-
-- Pub/Sub handles extremely high throughput
-- Dataflow scales without manual intervention
-- BigQuery supports fast SQL queries on streaming data
-- Low-latency infrastructure is ideal for distributed IoT devices
-
----
-
-### **Use Case 2 – Real-Time Chat Application**
-
-**Recommended CSP: Amazon Web Services (AWS)**
-
-**Why:**
-
-- AppSync supports real-time GraphQL subscriptions
-- WebSocket APIs can be deployed through API Gateway
-- DynamoDB provides millisecond read/write times
-- Ideal for fully serverless real-time chat
-
----
+| Use Case                                      | Recommended CSP                 | Reasoning (Cost, Performance, Integration, Ecosystem)                                                                                                                                                                                                                                                                          |
+| --------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **1. High-Volume IoT Sensor Monitoring**      | **Google Cloud Platform (GCP)** | **Performance:** Pub/Sub handles massive throughput with low latency. **Cost:** More predictable pricing compared to Kafka-style architectures. **Integration:** Dataflow + BigQuery provide seamless real-time analytics. **Ecosystem:** Strong data + ML tooling for anomaly detection.                                      |
+| **2. Real-Time Chat / Messaging Application** | **Amazon Web Services (AWS)**   | **Performance:** API Gateway WebSockets + DynamoDB offer millisecond response times. **Cost:** Pay-per-connection model scales well for chat workloads. **Integration:** Tight integration between AppSync, Lambda, Cognito, and DynamoDB. **Ecosystem:** Best real-time + GraphQL environment with reliable serverless tools. |
 
 ## Conclusion
 
@@ -234,22 +215,42 @@ AWS, Azure, and GCP each offer strong but different capabilities for real-time a
 
 ---
 
-## References (APA Format)
+## References
 
-Amazon Web Services. (2024). Amazon API Gateway. https://aws.amazon.com/api-gateway/  
-Amazon Web Services. (2024). AWS AppSync. https://aws.amazon.com/appsync/  
-Amazon Web Services. (2024). Amazon Kinesis. https://aws.amazon.com/kinesis/  
-Microsoft. (2024). Azure API Management. https://learn.microsoft.com/azure/api-management/  
-Microsoft. (2024). Azure Web PubSub. https://learn.microsoft.com/azure/azure-web-pubsub/  
-Microsoft. (2024). Azure Event Hubs. https://learn.microsoft.com/azure/event-hubs/  
-Google Cloud. (2024). API Gateway. https://cloud.google.com/api-gateway  
-Google Cloud. (2024). Apigee API Platform. https://cloud.google.com/apigee  
-Google Cloud. (2024). Pub/Sub. https://cloud.google.com/pubsub  
-Google Cloud. (2024). Dataflow. https://cloud.google.com/dataflow  
-Google Cloud. (2024). BigQuery. https://cloud.google.com/bigquery
+Amazon Web Service. _Amazon API Gateway_. https://aws.amazon.com/api-gateway/
+
+Amazon Web Services. _AWS AppSync_. https://aws.amazon.com/appsync/
+
+Amazon Web Services. _Amazon Kinesis_. https://aws.amazon.com/kinesis/
+
+Amazon Web Services. _Amazon DynamoDB_. https://aws.amazon.com/dynamodb/
+
+Amazon Web Services. _AWS IoT Core_. https://aws.amazon.com/iot-core/
+
+Amazon Web Services. _AWS Lambda_. https://aws.amazon.com/lambda/
+
+Microsoft. _Azure API Management_. https://learn.microsoft.com/azure/api-management/
+
+Microsoft. _Azure Web PubSub_. https://learn.microsoft.com/azure/azure-web-pubsub/
+
+Microsoft. _Azure Event Hubs_. https://learn.microsoft.com/azure/event-hubs/
+
+Google Cloud. _API Gateway_. https://cloud.google.com/api-gateway
+
+Google Cloud. _Apigee API Platform_. https://cloud.google.com/apigee
+
+Google Cloud. _Pub/Sub_. https://cloud.google.com/pubsub
+
+Google Cloud. _Dataflow_. https://cloud.google.com/dataflow
+
+Google Cloud. _BigQuery_. https://cloud.google.com/bigquery
+
+Google Cloud. _Firestore_. https://cloud.google.com/firestore
+
+Google Cloud. _Cloud Run_. https://cloud.google.com/run
 
 ---
 
 ## AI Usage Disclosure
 
-I used ChatGPT to help brainstorm, organize content, and improve the clarity of the writing. All analysis and final decisions in the report reflect my own understanding of the material.
+I used ChatGPT to help me brainstorm, organize my content, and improve the clarity of the writing. All analysis and final decisions in the report reflect my own understanding of the material.
